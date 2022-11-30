@@ -1,0 +1,74 @@
+fermi:
+  binning:
+    binsperdec: 8
+    binsz: 0.08
+    coordsys: CEL
+    projtype: WCS
+    roiwidth: 12
+  data:
+    evfile: ./backend/data/64119//fermi//EV00.lst
+    ltcube: null
+    scfile: ./backend/data/64119//fermi//SC00.fits
+  fileio:
+    logfile: ./backend/data/64119//fermi//log/fermipy.log
+    outdir: ./backend/data/64119//fermi/
+    usescratch: false
+  gtlike:
+    edisp: true
+    edisp_disable:
+    - isodiff
+    - galdiff
+    irfs: P8R3_SOURCE_V3
+  model:
+    catalogs:
+    - 4FGL-DR3
+    galdiff: $FERMI_DIFFUSE_DIR/gll_iem_v07.fits
+    isodiff: $FERMI_DIFFUSE_DIR/iso_P8R3_SOURCE_V3_v1.txt
+    src_roiwidth: 15
+  selection:
+    dec: 40.32820736807813
+    emax: 300000
+    emin: 100
+    evclass: 128
+    evtype: 3
+    filter: DATA_QUAL>0 && LAT_CONFIG==1
+    glat: 0.31945836678522715
+    glon: 79.34392291958228
+    ra: 308.1189978254872
+    target: G079.3439+00.3191
+    tmax: 372038403.0
+    tmin: 371952003.0
+    zmax: 90
+joint:
+  fileio:
+    outdir: ./backend/data/64119//joint/
+veritas:
+  background:
+    distance: 1.75
+    file: /Users/dtak/Research/scripts/vts-fermi/vtspy/refdata/Hipparcos_MAG8_1997.dat
+    magnitude: 7
+    simbad: true
+  cuts:
+    bias_cut: 0
+    eff_cut: 0
+    th2cut: 0.008
+  data:
+    anasum: ./backend/data/64119//veritas
+  fileio:
+    outdir: ./backend/data/64119//veritas/
+  selection:
+    dec: 40.32820736807813
+    emax: 10
+    emin: 0.1
+    exc_on_region_radius: 0.7
+    exc_radius: 0.25
+    format: mjd
+    glat: 0.31945836678522715
+    glon: 79.34392291958228
+    max_region_number: 6
+    nbin: 6
+    ra: 308.1189978254872
+    radius: 2.0
+    target: G079.3439+00.3191
+    tmax: 56215.14786434028
+    tmin: 56215.13395487268

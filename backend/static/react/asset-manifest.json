@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/react/static/css/main.a2dbb720.css",
+    "main.js": "/static/react/static/js/main.21558a25.js",
+    "static/js/787.cda612ba.chunk.js": "/static/react/static/js/787.cda612ba.chunk.js",
+    "static/media/veritas.png": "/static/react/static/media/veritas.ac2d1d5c1064c5c32933.png",
+    "index.html": "/static/react/index.html",
+    "main.a2dbb720.css.map": "/static/react/static/css/main.a2dbb720.css.map",
+    "main.21558a25.js.map": "/static/react/static/js/main.21558a25.js.map",
+    "787.cda612ba.chunk.js.map": "/static/react/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2dbb720.css",
+    "static/js/main.21558a25.js"
+  ]
+}
